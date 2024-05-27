@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Page() {
-    return <h1 className="text-3xl font-bold underline">Post</h1>;
+    return (
+        <>
+            <h1 className="text-2xl">Home</h1>
+        </>
+    )
 }
