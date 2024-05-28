@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 export const metadata = {
     title: "Post con nextJS",
     description: "",
+    keywords:"NextJs - React"
 };
 
 // These styles apply to every route in the application
