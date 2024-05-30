@@ -2,6 +2,11 @@ import PostCard from "@/components/PostCard";
 
 const page = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+    //simular carga para probar loading
+    await new Promise((resolve, reject) => {
+        return setTimeout(resolve, 3000);
+    });
     const data = await response.json();
 
     return (
