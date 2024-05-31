@@ -1,11 +1,13 @@
-'use client'
+"use client";
+import Link from "next/link";
 import React from "react";
 
 const PostCard = ({ post }) => {
     return (
         <div key={post.id} className="bg-emerald-500 rounded-md p-4">
             <p className="font-bold">
-                {post.id}. {post.title}
+                {post.id}. {post.title}{" "}
+                <Link href={`/post/${post.id}`} className="bg-emerald-200 rounded-md p-2"> Ver mas</Link>
             </p>
             <p className="font-thin">{post.body}</p>
             <div>
