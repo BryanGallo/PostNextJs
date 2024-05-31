@@ -4,9 +4,9 @@ import React from "react";
 const PostCard = ({ post }) => {
     return (
         <div key={post.id} className="bg-emerald-500 rounded-md p-4">
-            <post className="font-bold">
+            <p className="font-bold">
                 {post.id}. {post.title}
-            </post>
+            </p>
             <p className="font-thin">{post.body}</p>
             <div>
                 <button
