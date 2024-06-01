@@ -7,17 +7,19 @@ const PostCard = ({ post }) => {
         <div key={post.id} className="bg-emerald-500 rounded-md p-4">
             <p className="font-bold">
                 {post.id}. {post.title}{" "}
-                <Link href={`/post/${post.id}`} className="bg-emerald-200 rounded-md p-2"> Ver mas</Link>
             </p>
             <p className="font-thin">{post.body}</p>
-            <div>
+            <div className="flex flex-col lg:flex-row">
                 <button
                     className="block bg-white p-2 rounded-md mx-auto my-3"
                     onClick={() => {
                         alert(post.title);
                     }}
                 >
-                    Ver Post
+                    Previsualizar Post
+                </button>
+                <button className="block bg-white p-2 rounded-md mx-auto my-3">
+                    <Link href={`/post/${post.id}`}> Ver mas</Link>
                 </button>
             </div>
         </div>
