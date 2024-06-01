@@ -9,7 +9,7 @@ const Navbar = () => {
                     Home
                 </Link>
                 <Link href="/post" className="ml-2">
-                    Post
+                    Posts
                 </Link>
             </ul>
         </nav>
