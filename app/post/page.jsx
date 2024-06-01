@@ -1,6 +1,6 @@
 import PostCard from "@/components/PostCard";
 
-const page = async () => {
+const PostsPage = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
     //simular carga para probar loading
@@ -21,4 +21,4 @@ const page = async () => {
     );
 };
 
-export default page;
+export default PostsPage;

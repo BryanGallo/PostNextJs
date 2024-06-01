@@ -6,7 +6,7 @@ async function loadPost(id) {
     return data;
 }
 
-async function Page({ params }) {
+async function PostPage({ params }) {
     const { id } = params;
     const post = await loadPost(id);
     console.log(post);
@@ -20,4 +20,4 @@ async function Page({ params }) {
     );
 }
 
-export default Page;
+export default PostPage;
